@@ -277,6 +277,16 @@ main {
               width: 40%;
             }
           }
+
+          [data-aos="anim-progressbar-csharp"] {
+            width: 0;
+            height: 10px;
+            background-color: #4c8bf5;
+
+            &.aos-animate {
+              width: 40%;
+            }
+          }
         }
       }
 
@@ -333,6 +343,11 @@ footer {
 body[data-aos-delay='3300'] [data-aos],
 [data-aos][data-aos][data-aos-delay='3300'] {
   transition-delay: 3300ms;
+}
+
+body[data-aos-delay='3800'] [data-aos],
+[data-aos][data-aos][data-aos-delay='3800'] {
+  transition-delay: 3800ms;
 }
 
 [data-aos="anim"] {

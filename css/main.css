@@ -220,6 +220,14 @@ main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-php] {
 main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-php].aos-animate {
   width: 40%;
 }
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-csharp] {
+  width: 0;
+  height: 10px;
+  background-color: #4c8bf5;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-csharp].aos-animate {
+  width: 40%;
+}
 main #skills .list_skills span {
   color: #666;
   font-size: 20px;
@@ -260,6 +268,11 @@ footer .contact a {
 body[data-aos-delay="3300"] [data-aos],
 [data-aos][data-aos][data-aos-delay="3300"] {
   transition-delay: 3300ms;
+}
+
+body[data-aos-delay="3800"] [data-aos],
+[data-aos][data-aos][data-aos-delay="3800"] {
+  transition-delay: 3800ms;
 }
 
 [data-aos=anim] {
