@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Мой сайт</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#about_me">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about_me" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <h1>Обо мне</h1>
+
+        <div class="about_me_info">
+            <div class="img_wrapper">
+                <img src="#" alt="Фотография">
+            </div>
+
+            <div class="about_me_text">
+                <p>
+                    Меня зовут Иван, мне 18 лет. Я учусь в Хакасском политехническом колледже города Абакан на
+                    специальности “Разработчик веб и мультимедийных приложений”. Мне нравится данная специальность,
+                    учусь даже летом по своей воле. Иногда возникают сложности в освоении материала, но так выходит даже
+                    интереснее!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <h1>Навыки</h1>
+
+        <div class="list_skills">
+            <div class="block" data-aos="anim" data-aos-delay="300" data-aos-duration="800">
+                <div class="background_icon">
+                    <img src="./svg/html.svg" alt="HTML">
+                </div>
+
+                <div class="progressbar html">
+                    <div data-aos="anim-progressbar-html" data-aos-delay="300" data-aos-duration="1000"></div>
+                </div>
+
+                <span>HTML</span>
+            </div>
+            <div class="block" data-aos="anim" data-aos-delay="800" data-aos-duration="800">
+                <div class="background_icon">
+                    <img src="./svg/css.svg" alt="CSS">
+                </div>
+
+                <div class="progressbar css">
+                    <div data-aos="anim-progressbar-css" data-aos-delay="800" data-aos-duration="1000"></div>
+                </div>
+
+                <span>CSS</span>
+            </div>
+            <div class="block" data-aos="anim" data-aos-delay="1300" data-aos-duration="800">
+                <div class="background_icon">
+                    <img src="./svg/js.svg" alt="JavaScript">
+                </div>
+
+                <div class="progressbar js">
+                    <div data-aos="anim-progressbar-js" data-aos-delay="1300" data-aos-duration="1000"></div>
+                </div>
+
+                <span>JavaScript</span>
+            </div>
+            <div class="block" data-aos="anim" data-aos-delay="1800" data-aos-duration="800">
+                <div class="background_icon">
+                    <img src="./svg/figma.svg" alt="Figma">
+                </div>
+
+                <div class="progressbar figma">
+                    <div data-aos="anim-progressbar-figma" data-aos-delay="1800" data-aos-duration="1000"></div>
+                </div>
+
+                <span>Figma</span>
+            </div>
+            <div class="block" data-aos="anim" data-aos-delay="2300" data-aos-duration="800">
+                <div class="background_icon">
+                    <img src="./svg/gimp.svg" alt="GIMP">
+                </div>
+
+                <div class="progressbar gimp">
+                    <div data-aos="anim-progressbar-gimp" data-aos-delay="2300" data-aos-duration="1000"></div>
+                </div>
+
+                <span>GIMP</span>
+            </div>
+            <div class="block" data-aos="anim" data-aos-delay="2800" data-aos-duration="800">
+                <div class="background_icon">
+                    <img src="./svg/inkscape.svg" alt="Inkscape">
+                </div>
+
+                <div class="progressbar inkscape">
+                    <div data-aos="anim-progressbar-inkscape" data-aos-delay="2800" data-aos-duration="1000"></div>
+                </div>
+
+                <span>Inkscape</span>
+            </div>
+            <div class="block" data-aos="anim" data-aos-delay="3300" data-aos-duration="800">
+                <div class="background_icon">
+                    <img src="./svg/php.svg" alt="PHP">
+                </div>
+
+                <div class="progressbar php">
+                    <div data-aos="anim-progressbar-php" data-aos-delay="3300" data-aos-duration="1000"></div>
+                </div>
+
+                <span>PHP</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="contacts">
+    <span>Связаться со мной можно по номеру телефона или через электронную почту:</span>
+
+    <div class="contact">
+        <img src="./svg/phone.svg" alt="Телефон">
+        <a href="tel:89016008338">89016008338</a>
+    </div>
+    <div class="contact">
+        <img src="./svg/email.svg" alt="email">
+        <a href="mailto:ivantixonov@mail.ru">ivantixonov@mail.ru</a>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true
+    });
+</script>
+
+</body>
+</html>

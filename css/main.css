@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+div, section, header, main, footer, ::before {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+header {
+  width: calc(100% - 160px);
+  margin-top: 20px;
+  padding: 35px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccf;
+}
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    margin: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+  }
+}
+header nav a {
+  position: relative;
+}
+header nav a::before {
+  width: 0;
+  height: 3px;
+  display: block;
+  background-color: #69f;
+  content: "";
+  transition: width 0.5s ease;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+header nav a:hover::before {
+  width: 100%;
+  background-color: #000000;
+  left: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main #about_me h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+main #about_me .about_me_info {
+  height: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #69f;
+}
+@media (max-width: 768px) {
+  main #about_me .about_me_info {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+main #about_me .about_me_info .img_wrapper {
+  width: 188px;
+  height: 188px;
+  background-color: #d9d9d9;
+}
+main #about_me .about_me_info .about_me_text {
+  max-width: 600px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+main #about_me .about_me_info .about_me_text p {
+  color: #666;
+  font-size: 18px;
+  font-weight: 500;
+}
+main #skills {
+  margin-top: 100px;
+}
+main #skills h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+main #skills .list_skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px 100px;
+}
+main #skills .list_skills .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+main #skills .list_skills .block .background_icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ccf;
+}
+main #skills .list_skills .block .background_icon img {
+  width: 70px;
+  height: 70px;
+}
+main #skills .list_skills .block .progressbar {
+  width: 100px;
+  height: 10px;
+  background-color: #e0e0e0;
+  position: relative;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-html] {
+  width: 0;
+  height: 10px;
+  background-color: #ff6f61;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-html].aos-animate {
+  width: 75%;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-css] {
+  width: 0;
+  height: 10px;
+  background-color: #4c8bf5;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-css].aos-animate {
+  width: 75%;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-js] {
+  width: 0;
+  height: 10px;
+  background-color: #f7df1e;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-js].aos-animate {
+  width: 60%;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-figma] {
+  width: 0;
+  height: 10px;
+  background-color: #a259ff;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-figma].aos-animate {
+  width: 75%;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-gimp] {
+  width: 0;
+  height: 10px;
+  background-color: #6c6c6c;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-gimp].aos-animate {
+  width: 50%;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-inkscape] {
+  width: 0;
+  height: 10px;
+  background-color: #3f3f3f;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-inkscape].aos-animate {
+  width: 50%;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-php] {
+  width: 0;
+  height: 10px;
+  background-color: #7a7f9a;
+}
+main #skills .list_skills .block .progressbar [data-aos=anim-progressbar-php].aos-animate {
+  width: 40%;
+}
+main #skills .list_skills span {
+  color: #666;
+  font-size: 20px;
+}
+
+footer {
+  width: calc(100% - 160px);
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #ccf;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@media (max-width: 768px) {
+  footer {
+    width: 100%;
+  }
+}
+footer span {
+  max-width: 400px;
+  color: #666;
+  font-size: 20px;
+  text-align: center;
+}
+footer .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+footer .contact a {
+  font-size: 20px;
+}
+
+body[data-aos-delay="3300"] [data-aos],
+[data-aos][data-aos][data-aos-delay="3300"] {
+  transition-delay: 3300ms;
+}
+
+[data-aos=anim] {
+  opacity: 0;
+  transform: translateY(60px);
+}
+[data-aos=anim].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=main.css.map */
