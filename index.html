@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Мой сайт</title>
 </head>
 <body>
@@ -16,6 +16,7 @@
         <a href="#about_me">Обо мне</a>
         <a href="#skills">Навыки</a>
         <a href="#contacts">Контакты</a>
+        <a href="#" id="reg">Регистрация</a>
     </nav>
 </header>
 
@@ -31,8 +32,8 @@
             <div class="about_me_text">
                 <p>
                     Меня зовут Иван, мне 18 лет. Я учусь в Хакасском политехническом колледже города Абакан на
-                    специальности “Разработчик веб и мультимедийных приложений”. Мне нравится данная специальность,
-                    учусь даже летом по своей воле. Иногда возникают сложности в освоении материала, но так выходит даже
+                    специальности “Разработчик веб и мультимедийных приложений”. Мне очень нравится данная
+                    специальность. Иногда возникают сложности в освоении материала, но так выходит даже
                     интереснее!
                 </p>
             </div>
@@ -45,7 +46,7 @@
         <div class="list_skills">
             <div class="block" data-aos="anim" data-aos-delay="300" data-aos-duration="800">
                 <div class="background_icon">
-                    <img src="./svg/html.svg" alt="HTML">
+                    <img src="svg/html.svg" alt="HTML">
                 </div>
 
                 <div class="progressbar html">
@@ -56,7 +57,7 @@
             </div>
             <div class="block" data-aos="anim" data-aos-delay="800" data-aos-duration="800">
                 <div class="background_icon">
-                    <img src="./svg/css.svg" alt="CSS">
+                    <img src="svg/css.svg" alt="CSS">
                 </div>
 
                 <div class="progressbar css">
@@ -67,7 +68,7 @@
             </div>
             <div class="block" data-aos="anim" data-aos-delay="1300" data-aos-duration="800">
                 <div class="background_icon">
-                    <img src="./svg/js.svg" alt="JavaScript">
+                    <img src="svg/js.svg" alt="JavaScript">
                 </div>
 
                 <div class="progressbar js">
@@ -78,7 +79,7 @@
             </div>
             <div class="block" data-aos="anim" data-aos-delay="1800" data-aos-duration="800">
                 <div class="background_icon">
-                    <img src="./svg/figma.svg" alt="Figma">
+                    <img src="svg/figma.svg" alt="Figma">
                 </div>
 
                 <div class="progressbar figma">
@@ -89,7 +90,7 @@
             </div>
             <div class="block" data-aos="anim" data-aos-delay="2300" data-aos-duration="800">
                 <div class="background_icon">
-                    <img src="./svg/gimp.svg" alt="GIMP">
+                    <img src="svg/gimp.svg" alt="GIMP">
                 </div>
 
                 <div class="progressbar gimp">
@@ -100,7 +101,7 @@
             </div>
             <div class="block" data-aos="anim" data-aos-delay="2800" data-aos-duration="800">
                 <div class="background_icon">
-                    <img src="./svg/inkscape.svg" alt="Inkscape">
+                    <img src="svg/inkscape.svg" alt="Inkscape">
                 </div>
 
                 <div class="progressbar inkscape">
@@ -111,7 +112,7 @@
             </div>
             <div class="block" data-aos="anim" data-aos-delay="3300" data-aos-duration="800">
                 <div class="background_icon">
-                    <img src="./svg/php.svg" alt="PHP">
+                    <img src="svg/php.svg" alt="PHP">
                 </div>
 
                 <div class="progressbar php">
@@ -123,7 +124,7 @@
 
             <div class="block" data-aos="anim" data-aos-delay="3800" data-aos-duration="800">
                 <div class="background_icon">
-                    <img src="./svg/csharp.svg" alt="csharp">
+                    <img src="svg/csharp.svg" alt="csharp">
                 </div>
 
                 <div class="progressbar csharp">
@@ -136,19 +137,50 @@
     </section>
 </main>
 
+<div id="modal">
+    <form>
+        <h2>Регистрация</h2>
+
+        <div class="input-container">
+            <input type="text" name="name" id="name" autocomplete="off" pattern="^[A-ZА-ЯЁ][a-zа-яё]+$" required>
+            <label for="name">Имя</label>
+        </div>
+
+        <div class="input-container">
+            <input type="text" name="lastname" id="lastname" autocomplete="off" pattern="^[A-ZА-ЯЁ][a-zа-яё]+$"
+                   required>
+            <label for="lastname">Фамилия</label>
+        </div>
+
+        <div class="input-container">
+            <input type="email" name="email" id="email" autocomplete="off" required>
+            <label for="email">Email</label>
+        </div>
+
+        <div class="input-container">
+            <input type="password" name="password" id="password" autocomplete="off" pattern="^[A-Za-zА-Яа-яЁё0-9]{6,}$"
+                   required>
+            <label for="password">Пароль</label>
+        </div>
+
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+</div>
+
 <footer id="contacts">
     <span>Связаться со мной можно по номеру телефона или через электронную почту:</span>
 
     <div class="contact">
-        <img src="./svg/phone.svg" alt="Телефон">
-        <a href="tel:89016008338">89016008338</a>
+        <img src="svg/phone.svg" alt="Телефон">
+        <a href="tel:89016008338">+7(901)-600-83-38</a>
     </div>
     <div class="contact">
-        <img src="./svg/email.svg" alt="email">
-        <a href="mailto:ivantixonov@mail.ru">ivantixonov@mail.ru</a>
+        <img src="svg/email.svg" alt="email">
+        <a href="mailto:ivantixonov00@mail.ru">ivantixonov00@mail.ru</a>
     </div>
 </footer>
 
+<script src="js/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({
