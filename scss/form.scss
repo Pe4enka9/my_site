@@ -24,7 +24,7 @@ form {
   padding: 30px;
 
   background-color: #fff;
-  
+
   border: 2px solid #ccc;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -47,8 +47,10 @@ form {
     position: relative;
   }
 
-  input:not(input[type="submit"]) {
+  input:not(input[type="submit"], input[type="checkbox"]),
+  textarea {
     width: 100%;
+    height: 57px;
 
     padding: 15px;
 
@@ -61,6 +63,7 @@ form {
     font-size: 20px;
     font-weight: 500;
 
+    resize: vertical;
     transition: border-bottom-color .3s ease;
 
     &:focus {
@@ -91,6 +94,54 @@ form {
     left: 15px;
 
     transition: .3s ease;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    user-select: none;
+
+    transform: none;
+    position: static;
+
+    &::after {
+      width: 20px;
+      height: 20px;
+
+      display: block;
+
+      border: 1px solid #ccc;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+
+      content: '';
+    }
+  }
+
+  #checkbox {
+    display: none;
+
+    &:checked + .checkbox-label::after {
+      background: url("../svg/done.svg") no-repeat center / contain;
+      animation: pop-in .4s ease-out;
+
+      @keyframes pop-in {
+        0% {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        50% {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
   }
 
   input[type="submit"] {

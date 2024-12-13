@@ -1,4 +1,4 @@
-document.querySelectorAll('.input-container input').forEach(input => {
+document.querySelectorAll('.input-container input, .input-container textarea').forEach(input => {
     input.addEventListener('input', () => {
         if (input.value.length > 0) {
             input.classList.add('filled');
@@ -11,7 +11,6 @@ document.querySelectorAll('.input-container input').forEach(input => {
 
 const modal = document.getElementById('modal');
 const form = document.querySelector('form');
-console.log(form);
 
 document.getElementById('reg').addEventListener('click', () => {
     modal.style.opacity = '1';

@@ -156,11 +156,21 @@
             <input type="email" name="email" id="email" autocomplete="off" required>
             <label for="email">Email</label>
         </div>
+        
+        <div class="input-container">
+            <textarea name="about" id="about"></textarea>
+            <label for="about">О себе</label>
+        </div>
 
         <div class="input-container">
             <input type="password" name="password" id="password" autocomplete="off" pattern="^[A-Za-zА-Яа-яЁё0-9]{6,}$"
                    required>
             <label for="password">Пароль</label>
+        </div>
+
+        <div class="input-container">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">Вы хороший?</label>
         </div>
 
         <input type="submit" value="Зарегистрироваться">
