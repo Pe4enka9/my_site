@@ -121,7 +121,7 @@ form {
     }
   }
 
-  #checkbox {
+  input[type="checkbox"] {
     display: none;
 
     &:checked + .checkbox-label::after {

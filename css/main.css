@@ -91,10 +91,10 @@ form .checkbox-label::after {
   border-radius: 5px;
   content: "";
 }
-form #checkbox {
+form input[type=checkbox] {
   display: none;
 }
-form #checkbox:checked + .checkbox-label::after {
+form input[type=checkbox]:checked + .checkbox-label::after {
   background: url("../svg/done.svg") no-repeat center/contain;
   animation: pop-in 0.4s ease-out;
 }
